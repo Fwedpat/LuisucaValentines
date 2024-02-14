@@ -52,7 +52,104 @@
             padding: 0 25px;
         }
         }
+
+        .checkbox-wrapper-5 .check {
+      --size: 40px;
+  
+      position: relative;
+      background: linear-gradient(90deg, #f19af3, #f099b5);
+      line-height: 0;
+      perspective: 400px;
+      font-size: var(--size);
+    }
+  
+    .checkbox-wrapper-5 .check input[type="checkbox"],
+    .checkbox-wrapper-5 .check label,
+    .checkbox-wrapper-5 .check label::before,
+    .checkbox-wrapper-5 .check label::after,
+    .checkbox-wrapper-5 .check {
+      appearance: none;
+      display: inline-block;
+      border-radius: var(--size);
+      border: 0;
+      transition: .35s ease-in-out;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+  
+    .checkbox-wrapper-5 .check label {
+      width: calc(2.2 * var(--size));
+      height: var(--size);
+      background: #d7d7d7;
+      overflow: hidden;
+    }
+  
+    .checkbox-wrapper-5 .check input[type="checkbox"] {
+      position: absolute;
+      z-index: 1;
+      width: calc(.8 * var(--size));
+      height: calc(.8 * var(--size));
+      top: calc(.1 * var(--size));
+      left: calc(.1 * var(--size));
+      background: linear-gradient(45deg, #dedede, #ffffff);
+      box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+      outline: none;
+      margin: 0;
+    }
+  
+    .checkbox-wrapper-5 .check input[type="checkbox"]:checked {
+      left: calc(1.3 * var(--size));
+    }
+  
+    .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label {
+      background: transparent;
+    }
+  
+    .checkbox-wrapper-5 .check label::before,
+    .checkbox-wrapper-5 .check label::after {
+      content: "· ·";
+      position: absolute;
+      overflow: hidden;
+      left: calc(.15 * var(--size));
+      top: calc(.5 * var(--size));
+      height: var(--size);
+      letter-spacing: calc(-0.04 * var(--size));
+      color: #9b9b9b;
+      font-family: "Times New Roman", serif;
+      z-index: 2;
+      font-size: calc(.6 * var(--size));
+      border-radius: 0;
+      transform-origin: 0 0 calc(-0.5 * var(--size));
+      backface-visibility: hidden;
+    }
+  
+    .checkbox-wrapper-5 .check label::after {
+      content: "●";
+      top: calc(.65 * var(--size));
+      left: calc(.2 * var(--size));
+      height: calc(.1 * var(--size));
+      width: calc(.35 * var(--size));
+      font-size: calc(.2 * var(--size));
+      transform-origin: 0 0 calc(-0.4 * var(--size));
+    }
+  
+    .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::before,
+    .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
+      left: calc(1.55 * var(--size));
+      top: calc(.4 * var(--size));
+      line-height: calc(.1 * var(--size));
+      transform: rotateY(360deg);
+    }
+  
+    .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
+      height: calc(.16 * var(--size));
+      top: calc(.55 * var(--size));
+      left: calc(1.6 * var(--size));
+      font-size: calc(.6 * var(--size));
+      line-height: 0;
+    }
 </style>
+
 
 
 <div class="GoNext">
@@ -74,6 +171,140 @@
                         <img class="kitty" style="height: 200px; width: 200px" src="Cute Kitty 2.png" >
                     </div>
                 </div>
+                <br>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); font-size: 20px; text-align: right;">
+                            Pasta!
+                        </div>
+                    </div>
+
+                    <div class="col ">
+                        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); font-size: 20px; text-align: center">         
+                            Pizza!
+                        </div>
+                        </div>
+
+                    <div class="col">
+                        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); font-size: 20px; text-align: left;"">
+                            Sushi!
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col d-flex justify-content-end">
+                    <img class="kitty" style="height: 200px; width: 200px" src="pasta.png">
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                        <img class="kitty" style="height: 200px; width: 200px" src="pizza.jpg">
+                        </div>
+
+                    <div class="col d-flex justify-content-start">
+                        <img class="kitty" style="height: 200px; width: 200px" src="sushi.jpg" >
+                    </div>
+                </div>
+
+
+
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col d-flex justify-content-end" style="margin-top: 5px; padding-left: 14%;">
+                        <div class="checkbox-wrapper-5">
+                        <div class="check">
+                            <input id="check-5" type="checkbox">
+                            <label for="check-5"></label>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-end" style="margin-top: 5px; padding-right: 12%; padding-left: 12%;">
+                        <div class="checkbox-wrapper-5">
+                        <div class="check">
+                            <input id="check-6" type="checkbox">
+                            <label for="check-6"></label>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-end" style="margin-top: 5px; padding-right: 18%;">
+                        <div class="checkbox-wrapper-5">
+                        <div class="check">
+                            <input id="check-7" type="checkbox">
+                            <label for="check-7"></label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col">
+                        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); font-size: 20px; text-align: right;">
+                            Korean!
+                        </div>
+                    </div>
+
+                    <div class="col ">
+                        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); font-size: 20px; text-align: center">         
+                            Taiwanese!
+                        </div>
+                        </div>
+
+                    <div class="col">
+                        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); font-size: 20px; text-align: left;"">
+                            Hong Kong!
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col d-flex justify-content-end">
+                    <img class="kitty" style="height: 200px; width: 200px" src="korean.jpg">
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                        <img class="kitty" style="height: 200px; width: 200px" src="taiwan food.jpg">
+                        </div>
+
+                    <div class="col d-flex justify-content-start">
+                        <img class="kitty" style="height: 200px; width: 200px" src="hong kong.jpg" >
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col d-flex justify-content-end" style="margin-top: 5px; padding-left: 14%;">
+                        <div class="checkbox-wrapper-5">
+                        <div class="check">
+                            <input id="check-8" type="checkbox">
+                            <label for="check-8"></label>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-end" style="margin-top: 5px; padding-right: 12%; padding-left: 12%;">
+                        <div class="checkbox-wrapper-5">
+                        <div class="check">
+                            <input id="check-9" type="checkbox">
+                            <label for="check-9"></label>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-end" style="margin-top: 5px; padding-right: 18%;">
+                        <div class="checkbox-wrapper-5">
+                        <div class="check">
+                            <input id="check-12" type="checkbox">
+                            <label for="check-12"></label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
+
 
                 <button class="button-74" id="button6" style="font-family:Sixtyfour; margin-top: 30px;  width: 40%; height: 30%;   display: block;
                 margin-left: auto;
