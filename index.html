@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guapa!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #B2B5E0, #C5ADC5);
+            margin: 0;
+            padding-top: 56px; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: fixed;
+            top: 2rem; 
+            left: 0; 
+        }
+        .navbar-brand, .navbar-nav {
+            flex: 1;
+        }
+        .navbar-collapse {
+            justify-content: center;
+        }
+        .navbar-nav {
+            justify-content: center;
+        }
+        .main-content {
+            height: 95%; /* Adjust height dynamically */
+            margin-top: 3%;
+            overflow: auto; /* Enable scroll within content area if needed */
+            align-items: center; /* Center content vertically */
+        }
+        .spline-container {
+            margin-top: 10px;
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+
+        .button-56 {
+        background-color: #fee6e3;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-family: 'Sixtyfour', sans-serif; 
+        color: rgb(224, 27, 224); 
+        width: fit-content;
+        }
+
+        .button-56:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+        }
+
+        .button-56:hover:after {
+        transform: translate(0, 0);
+        }
+
+        .button-56:active {
+        background-color: #ffdeda;
+        outline: 0;
+        }
+
+        .button-56:hover {
+        outline: 0;
+        }
+
+        @media (min-width: 768px) {
+        .button-56 {
+            padding: 0 40px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); text-align: center;">Oli Guapa!<br> Happy Valentines!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="main-content container">
+        <div class="spline-container">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"></script>
+            <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/wLIKOJlsS5mPLh9j/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+    <div class="GoNext">
+        <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); text-align: center; margin-top: 30px;">
+            Lets plan our cutie date!
+            </div>
+            <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); text-align: center; margin-top: 30px;">
+                Do you accept?
+                </div>
+                <div class="container" style="font-family: 'Sixtyfour', sans-serif; color: rgb(224, 27, 224); text-align: center; margin-top: 30px; margin-bottom: 30px">
+                    <div class="row">
+                        <div class="col d-flex justify-content-end">
+                        <button onclick="change()" class="button-56" role="button" id="button1">OF COURSE!?</button>
+                        </div>
+                        <div class="col d-flex justify-content-start">
+                            <button onclick="change2()" class="button-56" role="button" id="button2">QUE???</button>
+                        </div>
+                    </div>
+
+        </div>
+
+        <script>
+            function change() {
+                var elem = document.getElementById("button1");
+                if (elem.innerHTML == "OF COURSE!?") elem.innerHTML = "Are you sure??";
+                else if (elem.innerHTML == "Are you sure??") elem.innerHTML = "Pinky Promise???";
+                else if (elem.innerHTML == "Pinky Promise???") elem.innerHTML = "Okay I trust you pookie!";
+                else if (elem.innerHTML == "Okay I trust you pookie!") window.location.href = "food.html";
+            }
+        </script>
+
+        <script>
+            function change2() {
+                var elem = document.getElementById("button2");
+                if (elem.innerHTML == "QUE???") elem.innerHTML = "WDYM QUE??";
+                else if (elem.innerHTML == "WDYM QUE??") elem.innerHTML = "BRUH BABY I CANT BELIEVE YOU";
+                else if (elem.innerHTML == "BRUH BABY I CANT BELIEVE YOU") elem.innerHTML = "This is so mean baby :(";
+                else if (elem.innerHTML == "This is so mean baby :(") elem.innerHTML = "I'M REMOVING YOUR BUTTON PRIVILLAGES THEN :)";
+
+            }
+        </script>
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
