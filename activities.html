@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+<style>
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+</style>
+
+  <body style="background:linear-gradient(to right, #8EC5FC, #E0C3FC);">
+    <h1 style="font-family:Sixtyfour; text-align:center; margin-top:30px">WHAT ACTIVITIESSS!?</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  <img style="margin-top:30px; width: 40%; height: 30%;   display: block;
+  margin-left: auto;
+  margin-right: auto; border-radius: 2%;" src="cutecat.gif">
+  <h1 style="font-family:Sixtyfour; text-align:center; margin-top:30px">GEOGUESSER?!</h1>
+  <img style="margin-top:30px; width: 40%; height: 30%;   display: block;
+  margin-left: auto;
+  margin-right: auto;   border-radius: 4%;" src="ludwigstreet.png">
+  <div class="container" style="padding-bottom: 10%;">
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-sm d-flex justify-content-end">
+        <button class="button-74" id="button1" onclick="myFunction()">SI I LOVE GEOGUESSER BABY</button>
+      </div>
+      <div class="col-sm justify-content-end">
+        <button class="button-74" id="button2" role="button" onclick="myFunction4()">I'm not feeling geoguesser baby :( </button>
+      </div>
+    </div>
+    <h1 style="font-family:Sixtyfour; text-align:center; margin-top:30px">WHAT TO WATCH!?</h1>
+    <img style="margin-top:30px; width: 40%; height: 30%;   display: block;
+    margin-left: auto;
+    margin-right: auto; border-radius: 2%;" src="tvCats.gif">
+    <h1 style="font-family:Sixtyfour; text-align:center; margin-top:30px">The Great   or    Gilmore?!</h1>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-sm d-flex justify-content-end" style="height: fit-content;">
+        <img style="margin-top:30px; width: 40%; height: 30%;   display: block;
+        margin-left: auto;
+        margin-right: 5%;   border-radius: 4%;" src="theGreat.jpg">
+      </div>
+      <div class="col-sm d-flex justify-content-end" style="width: fit-content;
+      block-size: fit-content;">
+        <img style="margin-top:30px; width: 40%; height: 30%;   display: block;
+        margin-right: auto; margin-left:5%;  border-radius: 4%;" src="gilmore.jpg">
+      </div>
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-sm d-flex justify-content-end">
+      <button class="button-74" id="button3" onclick="myFunction2()">LETSSS GO BRIGERTON 2.0!!</button>
+    </div>
+    <div class="col-sm justify-content-end">
+      <button class="button-74" id="button4" role="button">Oooooo i've missed gilmore!! </button>
+    </div>
+  </div>
+  <h1 style="font-family:Sixtyfour; text-align:center; margin-top:40px">un poco tiktok quiz on the side?!</h1>
+  <img style="margin-top:30px; width: 40%; height: 30%;   display: block;
+  margin-left: auto;
+  margin-right: auto; border-radius: 5%;" src="tiktok.jpg">
+  <button class="button-74" id="button6" style="font-family:Sixtyfour; margin-top: 30px;  width: 40%; height: 30%;   display: block;
+  margin-left: auto;
+  margin-right: auto;" onclick="myFunction3()">CONFIRM!</button>
+
+</html>
+
+<script>
+  function myFunction() {
+    if (document.getElementById("button1").innerHTML == "SI I LOVE GEOGUESSER BABY"){
+      document.getElementById("button1").innerHTML = "LETSS GOOOOO!";
+    }
+    else if (document.getElementById("button1").innerHTML == "LETSS GOOOOO!"){
+      document.getElementById("button1").innerHTML = "Confirmed!!";
+      document.getElementById("button1").style.color = 'Green';
+    }
+  }
+  </script>
+
+<script>
+  function myFunction4() {
+    if (document.getElementById("button2").innerHTML == "I'm not feeling geoguesser baby :( "){
+      document.getElementById("button2").innerHTML = "Sorry baby you can't not play 🤣!";
+    }
+    else if (document.getElementById("button1").innerHTML == "LETSS GOOOOO!"){
+      document.getElementById("button1").innerHTML = "Confirmed!!";
+      document.getElementById("button1").style.color = 'Green';
+    }
+  }
+  </script>
+
+
+<script>
+  function myFunction2() {
+    if (document.getElementById("button3").innerHTML == "LETSSS GO BRIGERTON 2.0!!"){
+      document.getElementById("button3").innerHTML = "ARE YOU SURE?!";
+    }
+    else if (document.getElementById("button3").innerHTML == "ARE YOU SURE?!"){
+      document.getElementById("button3").innerHTML = "ARE YOU DOUBLE SURE?!!";
+    }
+    else if (document.getElementById("button3").innerHTML == "ARE YOU DOUBLE SURE?!!"){
+      document.getElementById("button3").innerHTML = "Confirmed!!";
+      document.getElementById("button3").style.color = 'Green';
+      document.getElementById("button4").innerHTML = "CANCELLED";
+      document.getElementById("button4").style.color = 'RED';
+    }
+  }
+  </script>
+
+
+<script>
+  function myFunction3() {
+    window.location.href = "final.html";
+    }
+  </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
