@@ -88,7 +88,7 @@
       <button class="button-74" id="button3" onclick="myFunction2()">LETSSS GO BRIGERTON 2.0!!</button>
     </div>
     <div class="col-sm justify-content-end">
-      <button class="button-74" id="button4" role="button">Oooooo i've missed gilmore!! </button>
+      <button class="button-74" id="button4" role="button" onclick="myFunction5()">Oooooo i've missed gilmore!! </button>
     </div>
   </div>
   <h1 style="font-family:Sixtyfour; text-align:center; margin-top:40px">un poco tiktok quiz on the side?!</h1>
@@ -139,6 +139,23 @@
       document.getElementById("button3").style.color = 'Green';
       document.getElementById("button4").innerHTML = "CANCELLED";
       document.getElementById("button4").style.color = 'RED';
+    }
+  }
+  </script>
+
+<script>
+  function myFunction5() {
+    if (document.getElementById("button4").innerHTML == "Oooooo i've missed gilmore!! "){
+      document.getElementById("button4").innerHTML = "IT HAS BEEN A WHILE...";
+    }
+    else if (document.getElementById("button4").innerHTML == "IT HAS BEEN A WHILE..."){
+      document.getElementById("button4").innerHTML = "ARE YOU SURE THO?!";
+    }
+    else if (document.getElementById("button4").innerHTML == "ARE YOU SURE THO?!"){
+      document.getElementById("button4").innerHTML = "Confirmed!!";
+      document.getElementById("button4").style.color = 'Green';
+      document.getElementById("button3").innerHTML = "CANCELLED";
+      document.getElementById("button3").style.color = 'RED';
     }
   }
   </script>
